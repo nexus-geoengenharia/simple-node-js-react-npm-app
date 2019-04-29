@@ -5,4 +5,10 @@ set -x
 git config user.email alexisdrops@gmail.com
 git config user.name alexislopes
 git checkout develop
+<<<<<<< HEAD
 git merge origin/master
+=======
+git pull
+git add 
+
+>>>>>>> origin/master
