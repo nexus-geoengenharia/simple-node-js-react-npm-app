@@ -4,11 +4,10 @@ echo 'Nesta etapa o Jenkins irá publicar o código na branch "prod" do reposit�
 set -x
 git config user.email alexisdrops@gmail.com
 git config user.name alexislopes
+git remote set-url origin git@github.com:alexislopes/https://github.com/nexus-geoengenharia/simple-node-js-react-npm-app.git
 git checkout develop
-<<<<<<< HEAD
-git merge origin/master
-=======
 git pull
-git add 
+git add .
+git commit -m "commit from jenkins"
+git push origin
 
->>>>>>> origin/master
