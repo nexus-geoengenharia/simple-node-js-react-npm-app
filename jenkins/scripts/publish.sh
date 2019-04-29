@@ -5,4 +5,4 @@ set -x
 git config user.email alexisdrops@gmail.com
 git config user.name alexislopes
 
-git merge origin develop
+git merge origin/develop
