@@ -10,4 +10,3 @@ git pull
 git add .
 git commit -m "commit from jenkins"
 git push origin
-
