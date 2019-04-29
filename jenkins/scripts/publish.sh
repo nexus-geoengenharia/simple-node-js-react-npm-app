@@ -9,4 +9,4 @@ git checkout develop
 git pull
 git add .
 git commit -m "second commit from jenkins"
-git push origin HEAD:develop
+git push origin develop
