@@ -8,7 +8,7 @@ pipeline {
     environment {
         CI = 'true'
     }
-    stages {
+    """stages {
         stage('Build') {
             steps {
                 sh 'npm install'
@@ -24,7 +24,7 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
             }
-        }
+        }"""
         stage('Publish') {
             steps {
                 withCredentials([string(credentialsId: 'token', variable: 'a459c90d24728795800cd8eec202aa39334f6935')]) {
