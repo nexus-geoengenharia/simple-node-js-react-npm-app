@@ -6,4 +6,6 @@ git config user.email alexisdrops@gmail.com
 git config user.name alexislopes
 git checkout develop
 git pull
-git merge origin/master
+git add .
+git commit -m "adsd"
+
