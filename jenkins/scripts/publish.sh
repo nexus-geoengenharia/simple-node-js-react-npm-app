@@ -8,4 +8,4 @@ git config user.name alexislopes
 echo $"push from Jenkins" >> "./pushes.log"
 git add .
 git commit -m "pushed from jenkins"
-git merge origin/prod
+git merge prod
