@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Publish') {
             steps {
-                withCredentials([string(credentialsId: 'jenkins--github-token', variable: 'a459c90d24728795800cd8eec202aa39334f6935')]) {
+                withCredentials([string(credentialsId: 'token', variable: 'a459c90d24728795800cd8eec202aa39334f6935')]) {
                     sh './jenkins/scripts/publish.sh'
                 } 
             }
