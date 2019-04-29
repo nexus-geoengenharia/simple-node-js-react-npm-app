@@ -28,8 +28,8 @@ pipeline {
         }
         stage('Publish') {
             steps {
-                withCredentials([string(credentialsId: 'jenkins--github-token', variable: '1ba88266ae3897f9850c837b700500eaa15af3b3')]) {
-                    sh('git merge origin/prod')
+                withCredentials([string(credentialsId: 'jenkins--github-token', variable: 'a459c90d24728795800cd8eec202aa39334f6935')]) {
+                    sh './jenkins/scripts/publish.sh'
                 } 
             }
         }
